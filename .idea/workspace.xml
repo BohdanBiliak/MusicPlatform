@@ -6,12 +6,31 @@
   <component name="ChangeListManager">
     <list default="true" id="b9f0ed38-538e-41dd-ab06-29c80b976da9" name="Changes" comment="Music_Platform 1.0">
       <changelist_data name="BohdanBiliak" email="" automatic="false" />
-      <change afterPath="$PROJECT_DIR$/client/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/musicPlatformProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/controller/admin.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/controller/albums.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/controller/auth.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/controller/songs.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/controller/stats.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/controller/user.controller.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/lib/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/models/album.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/models/messages.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/models/song.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/models/user.model.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/routes/admin.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/routes/albums.route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/routes/auth.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/routes/songs.routes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/routes/stats.route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/routes/user.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/Detrox/WebstormProjects/musicPlatformProject/server/src/models",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -63,6 +83,17 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Detrox\WebstormProjects\musicPlatformProject\server\src\models" />
+      <recent name="C:\Users\Detrox\WebstormProjects\musicPlatformProject\server\src\controller" />
+      <recent name="C:\Users\Detrox\WebstormProjects\musicPlatformProject\server\src\routes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Detrox\WebstormProjects\musicPlatformProject" />
+      <recent name="C:\Users\Detrox\WebstormProjects\musicPlatformProject\server" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -79,7 +110,9 @@
       <option name="presentableId" value="Default" />
       <updated>1744313888091</updated>
       <workItem from="1744313889164" duration="977000" />
-      <workItem from="1744484223520" duration="2401000" />
+      <workItem from="1744484223520" duration="3567000" />
+      <workItem from="1744562781579" duration="63000" />
+      <workItem from="1744972891762" duration="4282000" />
     </task>
     <servers />
   </component>
