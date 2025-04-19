@@ -1,9 +1,23 @@
-import {Router} from "express";
+import {Album} from "../models/album.model.js";
 
-const albumsController = Router();
+export const getAllAlbums = async(req,res,next) => {
+    try{
+      const albums = await Album.find()
+        res.status(200).json(albums)
 
-albumsController.use("/", (req, res) => {
-    res.send("user route used");
-});
+    } catch(err){
+        next(err)
 
-export default albumsController;
+    }
+}
+export const getAlbumById = async(req,res,next) => {
+   try{
+       const {albumId} = req.params
+       const album = await Album.findById(albumId).populate("songs");
+       if (!album) return res.status(404).json({error:"no album"})
+       res.status(200).json(album)
+
+   }catch(err){
+      next(err)
+   }
+}

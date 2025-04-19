@@ -1,6 +1,6 @@
 import {User} from "../models/user.model.js";
 
-export const authCallBack = async (req, res) => {
+export const authCallBack = async (req, res, next) => {
     try{
         const {id, firstName, lastName, imageUrl} = req.body;
         const user = await User.findOne({clerkId: id});
@@ -16,6 +16,6 @@ export const authCallBack = async (req, res) => {
 
     }catch(err){
         console.log(err);
-        res.status(500).json({success: false, error: err});
+       next(err)
     }
 }
