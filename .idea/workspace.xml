@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="b9f0ed38-538e-41dd-ab06-29c80b976da9" name="Changes" comment="Music_Platform 1.0">
       <changelist_data name="BohdanBiliak" email="" automatic="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/controller/stats.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controller/stats.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/controller/user.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/controller/user.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/middleware/auth.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/middleware/auth.middleware.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/models/album.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/models/album.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes/admin.routes.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/admin.routes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes/stats.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/stats.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/routes/user.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/routes/user.route.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +55,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Merging server",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/Detrox/WebstormProjects/musicPlatformProject/server/src/models",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -88,6 +97,7 @@
       <workItem from="1744484223520" duration="3567000" />
       <workItem from="1744562781579" duration="63000" />
       <workItem from="1744972891762" duration="16384000" />
+      <workItem from="1745055861881" duration="2701000" />
     </task>
     <servers />
   </component>
@@ -108,5 +118,17 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Music_Platform 1.0" />
     <option name="LAST_COMMIT_MESSAGE" value="Music_Platform 1.0" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/server/src/models/album.model.js</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

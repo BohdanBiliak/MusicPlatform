@@ -1,9 +1,11 @@
-import {Router} from "express";
+import {User} from "./models/User.js";
 
-const userController = Router();
-
-userController.use("/", (req, res) => {
-    res.send("user route used");
-});
-
-export default userController;
+export const getAllUsers = async (req, res, next) => {
+    try{
+        const currentUserId = req.auth.userId;
+        const users = await User.find({clerkId: {$ne: currentUserId}})
+        res.status(200).json(users)
+    }catch(err){
+      next(err)
+    }
+}

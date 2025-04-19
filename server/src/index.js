@@ -1,15 +1,16 @@
 import express from "express";
 import dotenv from "dotenv";
-import userRoute  from "./routes/user.route.js";
-import adminRoute from "./routes/admin.routes.js";
-import authRoute from "./routes/auth.routes.js";
-import songsRoute from "./routes/songs.routes.js";
-import albumsRoute from "./routes/albums.route.js";
-import statsRoute from "./routes/stats.route.js";
+
 import { clerkMiddleware } from '@clerk/express'
 import {connectDB} from "./lib/db.js";
 import fileUpload from "express-fileupload";
 import path from "path";
+import adminRoute from "./routes/admin.routes.js";
+import userRoute from "./routes/user.route.js";
+import authRoute from "./routes/auth.routes.js";
+import songsRoute from "./routes/songs.routes.js";
+import albumsRoute from "./routes/albums.route.js";
+import statsRoute from "./routes/stats.route.js";
 const app = express();
 const __dirname = path.resolve()
 dotenv.config();

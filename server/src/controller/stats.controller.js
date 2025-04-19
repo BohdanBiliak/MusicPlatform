@@ -1,9 +1,25 @@
-import {Router} from "express";
+import {Song} from "../models/song.model.js";
+import {User} from "../models/user.model.js";
+import {Album} from "../models/album.model.js";
 
-const statsController = Router();
+export const getStats =async (req, res, next) => {
+        try{
 
-statsController.use("/", (req, res) => {
-    res.send("user route used");
-});
+            const [totalSongs, totalUsers, totalAlbums, uniqueArtists] = await Promise.all(
+                [Song.countDocuments(), User.countDocuments(), Album.countDocuments(),
+                    Song.aggregate([
+                        {$unionWith:{coll:"albums", pipeline:[]}},
+                        {$group: {_id:"$artist"}},
+                        {$count:"count"}
+                    ])])
+            res.status(200).json({
+                totalSongs,
+                totalUsers,
+                totalAlbums,
+                totalArtists: uniqueArtists[0]?.count || 0
+            })
+        }catch(err){
+            next(err)
 
-export default statsController;
+        }
+}

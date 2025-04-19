@@ -1,10 +1,10 @@
 import {clerkClient} from '@clerk/express'
-export const protectRoute = async(req:any,res:any,next:any)=>{
+export const protectRoute = async(req,res,next)=>{
     if(!req.auth.userId) return res.status(401).send('Authentication required')
     next()
 }
 
-export const requireAdmin = async(req:any,res:any,next:any)=>{
+export const requireAdmin = async(req,res,next)=>{
     try{
       const currentUser = await clerkClient.users.getUser(req.user.userId)
         const isAdmin = process.env.ADMIN_EMAIL === currentUser.primaryEmailAddress?.emailAddress
